@@ -1,3 +1,4 @@
+
 ---
 
 # 💊 MediBillGen — Smart Medicine Invoice Generator  
@@ -183,13 +184,5 @@ DM me anytime — I'm always up for building something awesome together.
 ---
 
 ⭐ If you like this project, consider giving it a star! ⭐
-
----
-
-✅ **What’s New in This Version**
-- Added a full **QR Setup Guide** (with Google Lens instructions).  
-- Rewritten for readability for both tech and non-tech users.  
-- Clean Markdown formatting for GitHub (spacing, emojis, consistency).  
-- Still includes your personal story, setup steps, and professional tone.
 
 ---
