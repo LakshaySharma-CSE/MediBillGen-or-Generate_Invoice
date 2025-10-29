@@ -1,87 +1,59 @@
+💊 MediBillGen — Smart Medicine Invoice Generator
+
+A lightweight and interactive Python-based pharmacy invoice generator built with ReportLab and QRCode.
+It helps shop owners instantly create professional PDF invoices with discount, GST, and QR-based UPI payment support — all in one click.
+
 
 ---
 
-# 💊 MediBillGen — Smart Medicine Invoice Generator  
+⚙️ Features
 
-A lightweight and interactive **Python-based pharmacy invoice generator** built with **ReportLab** and **QRCode**.  
-It helps shop owners instantly create professional PDF invoices with **discount, GST, and QR-based UPI payment support** — all in one click.  
+✅ Dynamic input for medicines and receiver details
+✅ Automatic subtotal, 10% discount, and 18% GST calculation
+✅ QR code generation for UPI payments
+✅ Editable medicine list before generating invoice
+✅ Clean, print-ready PDF design
+✅ One-click setup and run for non-tech users
+
 
 ---
 
-## ⚙️ Features  
+🧠 Tech Stack
 
-✅ Dynamic input for medicines and receiver details  
-✅ Automatic subtotal, 10% discount, and 18% GST calculation  
-✅ QR code generation for UPI payments  
-✅ Editable medicine list before generating invoice  
-✅ Clean, print-ready PDF design  
-✅ One-click setup and run for non-tech users  
+Python 3
+
+ReportLab — PDF generation
+
+QRCode — QR payment creation
+
+datetime, os, textwrap — built-in modules
+
+
 
 ---
 
-## 🧠 Tech Stack  
+🧰 Installation (for Everyone)
 
-- **Python 3**  
-- **ReportLab** — PDF generation  
-- **QRCode** — QR payment creation  
-- **datetime**, **os**, **textwrap** — built-in modules  
+You can now install and run MediBillGen without typing any commands.
 
----
+🪄 Step 1: One-Time Setup
 
-## 🧰 Installation (for Everyone)  
+Run setup.bat
+This will:
 
-You can now install and run MediBillGen **without typing any commands**.  
+Create a Python virtual environment
 
-### 🪄 Step 1: One-Time Setup  
-Run `setup.bat`  
-This will:  
-- Create a Python virtual environment  
-- Install all necessary libraries (`reportlab`, `qrcode`)  
-- Prepare everything automatically  
+Install all necessary libraries (reportlab, qrcode)
 
-You only need to do this **once**.  
-
-### ▶️ Step 2: Run the Program  
-After setup, just double-click `run.bat`  
-It will automatically start your **invoice generator** each time you use it.  
-
----
-
-### ⚠️ Important — Setting Up Your QR Code  
-
-Before using the program for payments, you must **add your own UPI payment details** so the QR code links to your business account.  
-
-In your file **`generate_invoice.py`**, find this line:  
----
-```python
-qr_data = f"upi://pay?pa=<UPI_ID>&pn=<Payee Name>&am={grand_total:.2f}&cu=INR"
-
-Now, replace <UPI_ID> and <Payee Name> with your actual UPI details.
-
-💡 How to Find Your UPI Details:
-
-1. Open your existing business UPI QR code (for example, the one you display at your shop).
+Prepare everything automatically
 
 
-2. Scan it with Google Lens or any QR code scanner app.
+You only need to do this once.
 
+▶️ Step 2: Run the Program
 
-3. It will show details like:
-
-upi://pay?pa=yourupi@upi&pn=Your Business Name&cu=INR
-
-
-4. Copy your UPI ID (after pa=) and Payee Name (after pn=).
-
-
-5. Paste them into the code, like this:
-
-
-
-qr_data = f"upi://pay?pa=yourupi@upi&pn=YourBusinessName&am={grand_total:.2f}&cu=INR"
-
-✅ That’s it!
-Now, your generated invoice will include a fully functional UPI QR code linked to your payment account.
+After setup, just double-click run.bat
+It will automatically start your invoice generator each time you use it.
 
 
 ---
@@ -91,7 +63,7 @@ Now, your generated invoice will include a fully functional UPI QR code linked t
 This project began with a simple problem — and a spark of curiosity.
 
 I was working on a startup for a medical shop and helping with my family’s pharmacy business. While setting up the billing process, I realized that most invoice generator apps cost ₹500–₹1000 per month.
-For a small business or a new startup, that felt like an unnecessary expense — especially for something that could be automated with a bit of code.
+For a small business or an early-stage startup, that felt like an unnecessary expense — especially for something that could be automated with a bit of code.
 
 So I decided to build my own invoice generator — one that was simple, free, and efficient.
 
@@ -183,6 +155,5 @@ DM me anytime — I'm always up for building something awesome together.
 
 ---
 
-⭐ If you like this project, consider giving it a star! ⭐
+⭐ If you like this project, consider giving it a star!  can you read  for me
 
----
