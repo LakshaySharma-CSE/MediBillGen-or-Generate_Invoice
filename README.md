@@ -51,6 +51,35 @@ In your file **`generate_invoice.py`**, find this line:
 ```python
 qr_data = f"upi://pay?pa=<UPI_ID>&pn=<Payee Name>&am={grand_total:.2f}&cu=INR"
 ```
+Now, replace <UPI_ID> and <Payee Name> with your actual UPI details.
+
+💡 How to Find Your UPI Details:
+
+1. Open your existing business UPI QR code (for example, the one you display at your shop).
+
+
+2. Scan it with Google Lens or any QR code scanner app.
+
+
+3. It will show details like:
+
+upi://pay?pa=yourupi@upi&pn=Your Business Name&cu=INR
+
+
+4. Copy your UPI ID (after pa=) and Payee Name (after pn=).
+
+
+5. Paste them into the code, like this:
+
+
+
+qr_data = f"upi://pay?pa=yourupi@upi&pn=YourBusinessName&am={grand_total:.2f}&cu=INR"
+
+✅ That’s it!
+Now, your generated invoice will include a fully functional UPI QR code linked to your payment account.
+
+
+
 ---
 
 ## 🧩 Story Behind the Project
