@@ -50,7 +50,7 @@ In your file **`generate_invoice.py`**, find this line:
 
 ```python
 qr_data = f"upi://pay?pa=<UPI_ID>&pn=<Payee Name>&am={grand_total:.2f}&cu=INR"
-###
+```
 ---
 
 ## 🧩 Story Behind the Project
