@@ -42,6 +42,15 @@ You only need to do this **once**.
 After setup, just double-click `run.bat`  
 It will automatically start your **invoice generator** each time you use it.
 
+### ⚠️ Important — Setting Up Your QR Code  
+
+Before using the program for payments, you must **add your own UPI payment details** so the QR code links to your business account.  
+
+In your file **`generate_invoice.py`**, find this line:  
+
+```python
+qr_data = f"upi://pay?pa=<UPI_ID>&pn=<Payee Name>&am={grand_total:.2f}&cu=INR"
+
 ---
 
 ## 🧩 Story Behind the Project
