@@ -52,7 +52,7 @@ It will automatically start your **invoice generator** each time you use it.
 Before using the program for payments, you must **add your own UPI payment details** so the QR code links to your business account.  
 
 In your file **`generate_invoice.py`**, find this line:  
-
+---
 ```python
 qr_data = f"upi://pay?pa=<UPI_ID>&pn=<Payee Name>&am={grand_total:.2f}&cu=INR"
 
